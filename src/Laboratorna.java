@@ -107,5 +107,43 @@ public class Laboratorna {
 
         }
     }
+    public static void bubbleSort(String[][] BoardOfResults, int k) {
+        int Min = 0;
+        int a2 = 0;
+        String s1 = "";
+        String s2 = "";
+        for (int i = 0; i < k - 1; i++) {
+            for (int j = 0; j < k - i - 1; j++) {
+                try {
+                    s1 = BoardOfResults[j][1];
+                    s2 = BoardOfResults[j + 1][1];
+                    Min = Integer.parseInt(s1);
+                    a2 = Integer.parseInt(s2);
+                    if (Min < a2) {
+
+                        for (int e = 0; e < 5; e++) {
+                            String temp = BoardOfResults[j][e];
+                            BoardOfResults[j][e] = BoardOfResults[j + 1][e];
+                            BoardOfResults[j + 1][e] = temp;
+                        }
+                    }
+                } catch (Exception e) {
+                }
+            }
+        }
+    }
+    public static void OutPut(String[][] BoardOfResults) throws IOException {
+        System.out.println("____________Команда____О_______В_______Н_______П ");
+        for (int i = 0; i < BoardOfResults.length; i++) {
+            for (int j = 0; j < 5; j++) {
+                if (j == 0) {
+                    System.out.printf("%20s", BoardOfResults[i][j]);
+                } else {
+                    System.out.print("   " + BoardOfResults[i][j] + "\t");
+                }
+            }
+            System.out.println();
+        }
+    }
 }
 
