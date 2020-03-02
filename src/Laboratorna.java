@@ -1,4 +1,6 @@
 
+
+
 import java.util.Scanner;
 import java.lang.String;
 import java.util.ArrayList;
@@ -11,7 +13,7 @@ public class Laboratorna {
         System.out.print("Введіть назву папки: ");
         String folder_1 = input.nextLine();
         int counter = 0;
-        int l = CountOfTeam();
+        int l = CountOfTeam(folder_1);
         String[][] BoardOfResults = new String[l][5];
 
         File folder = new File(folder_1);
@@ -58,17 +60,61 @@ public class Laboratorna {
 
                 }
                 counter++;
-            }if(counter >= p){
+            }
+
+            if(counter >= p){
                 bubbleSort(BoardOfResults, l);
                 OutPut(BoardOfResults);
             }
         }
         writeCsv(BoardOfResults, l);
-
     }
-    public static int CountOfTeam() throws Exception {
+
+    public static void OutPut(String[][] BoardOfResults) throws IOException {
+        System.out.println("____________Команда____О_______В_______Н_______П ");
+        for (int i = 0; i < BoardOfResults.length; i++) {
+            for (int j = 0; j < 5; j++) {
+                if (j == 0) {
+                    System.out.printf("%20s", BoardOfResults[i][j]);
+                } else {
+                    System.out.print("   " + BoardOfResults[i][j] + "\t");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+
+    public static void bubbleSort(String[][] BoardOfResults, int k) {
+        int Min = 0;
+        int a2 = 0;
+        String s1 = "";
+        String s2 = "";
+        for (int i = 0; i < k - 1; i++) {
+            for (int j = 0; j < k - i - 1; j++) {
+                try {
+                    s1 = BoardOfResults[j][1];
+                    s2 = BoardOfResults[j + 1][1];
+                    Min = Integer.parseInt(s1);
+                    a2 = Integer.parseInt(s2);
+                    if (Min < a2) {
+
+                        for (int e = 0; e < 5; e++) {
+                            String temp = BoardOfResults[j][e];
+                            BoardOfResults[j][e] = BoardOfResults[j + 1][e];
+                            BoardOfResults[j + 1][e] = temp;
+                        }
+
+
+                    }
+                } catch (Exception e) {
+                }
+            }
+        }
+    }
+    public static int CountOfTeam(String folder_1) throws Exception {
         int teams = 0;
-        File folder = new File("FootballTeam");
+        File folder = new File(folder_1);
         File[] listOfFiles = folder.listFiles();
         for (File file : listOfFiles) {
             if (file.isFile()) {
@@ -106,44 +152,10 @@ public class Laboratorna {
                 }
             }
             writer.close();
-        } catch(Exception e) {}
-    }
-    public static void bubbleSort(String[][] BoardOfResults, int k) {
-        int Min = 0;
-        int a2 = 0;
-        String s1 = "";
-        String s2 = "";
-        for (int i = 0; i < k - 1; i++) {
-            for (int j = 0; j < k - i - 1; j++) {
-                try {
-                    s1 = BoardOfResults[j][1];
-                    s2 = BoardOfResults[j + 1][1];
-                    Min = Integer.parseInt(s1);
-                    a2 = Integer.parseInt(s2);
-                    if (Min < a2) {
+        } catch(Exception e) {
 
-                        for (int e = 0; e < 5; e++) {
-                            String temp = BoardOfResults[j][e];
-                            BoardOfResults[j][e] = BoardOfResults[j + 1][e];
-                            BoardOfResults[j + 1][e] = temp;
-                        }
-                    }
-                } catch (Exception e) {
-                }
-            }
         }
     }
-    public static void OutPut(String[][] BoardOfResults) throws IOException {
-        System.out.println("____________Команда____О_______В_______Н_______П ");
-        for (int i = 0; i < BoardOfResults.length; i++) {
-            for (int j = 0; j < 5; j++) {
-                if (j == 0) {
-                    System.out.printf("%20s", BoardOfResults[i][j]);
-                } else {
-                    System.out.print("   " + BoardOfResults[i][j] + "\t");
-                }
-            }
-            System.out.println();
-        }
-    }
+
+
 }
