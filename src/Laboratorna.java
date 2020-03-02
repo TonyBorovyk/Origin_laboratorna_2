@@ -63,5 +63,49 @@ public class Laboratorna {
 
         }
     }
+    public static int CountOfTeam() throws Exception {
+        int teams = 0;
+        File folder = new File("FootballTeam");
+        File[] listOfFiles = folder.listFiles();
+        for (File file : listOfFiles) {
+            if (file.isFile()) {
+                Scanner sc = new Scanner(new File(file.getName()));
+                String[] splitted;
+                String line_first;
+                line_first = sc.nextLine();
+                int k = Integer.parseInt(String.valueOf(line_first));
+                teams += k;
 
+            }
+        }
+        return teams;
+    }
+
+    public static void writeCsv(String[][] BoardOfResults, int l)
+    {
+        try {
+            File file = new File("result.csv");
+            file.createNewFile();
+            BufferedWriter writer = new BufferedWriter(new FileWriter(file));
+            for (int i = 0; i < l; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    writer.write(BoardOfResults[i][j]);
+                    if (j != 4)
+                    {
+                        writer.write(',');
+                    }
+                }
+                if(i != l - 1)
+                {
+                    writer.newLine();
+                }
+            }
+            writer.close();
+        } catch(Exception e) {
+
+        }
+    }
 }
+
