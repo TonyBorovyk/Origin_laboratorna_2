@@ -10,5 +10,8 @@ public class Laboratorna {
         String[] splitted;
         String digits;
         String line_first;
+        line_first = sc.nextLine();
+        int k = Integer.parseInt(String.valueOf(line_first));
+        String[][] BoardOfResults = new String[k][5];
     }
 }
