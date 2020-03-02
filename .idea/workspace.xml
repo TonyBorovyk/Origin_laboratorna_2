@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42523bcc-33f9-4fb3-98be-5bb9146f0038" name="Default Changelist" comment="" />
+    <list default="true" id="42523bcc-33f9-4fb3-98be-5bb9146f0038" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Laboratorna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Laboratorna.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +22,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Origin_laboratorna_2" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -38,18 +46,34 @@
       <option name="project" value="LOCAL" />
       <updated>1583152782532</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add files">
+      <created>1583173334458</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583173334458</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Delete massage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete massage" />
+    <MESSAGE value="Add files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add files" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="457" y="0" key="CommitChangelistDialog2" timestamp="1583152781554">
+    <state x="457" y="0" key="CommitChangelistDialog2" timestamp="1583173333489">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="457" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583152781554" />
+    <state x="457" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583173333489" />
+    <state x="352" y="121" key="Vcs.Push.Dialog.v2" timestamp="1583173342402">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="352" y="121" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583173342402" />
+    <state x="678" y="395" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583174483133">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="678" y="395" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583174483133" />
     <state x="53" y="0" key="new project wizard" timestamp="1583153213485">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -12,7 +12,19 @@ public class Laboratorna {
         int counter = 0;
         int l = CountOfTeam();
         String[][] BoardOfResults = new String[l][5];
-    }
+
+        File folder = new File(folder_1);
+        File[] listOfFiles = folder.listFiles();
+        int p =  listOfFiles.length;
+        for (File file : listOfFiles) {
+            if (file.isFile()) {
+                Scanner sc = new Scanner(new File(file.getName()));
+                String[] splitted;
+                String line_first;
+                line_first = sc.nextLine();
+                int k = Integer.parseInt(String.valueOf(line_first));
+
+            }}}
 
     public static int CountOfTeam() throws Exception {
         int teams = 0;
