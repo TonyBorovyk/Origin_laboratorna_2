@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42523bcc-33f9-4fb3-98be-5bb9146f0038" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Laboratorna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Laboratorna.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +21,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -38,24 +37,52 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583147579071</updated>
+      <workItem from="1583184389512" duration="86000" />
+      <workItem from="1583184520754" duration="821000" />
     </task>
+    <task id="LOCAL-00001" summary="Tenth commit">
+      <created>1583182052703</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583182052703</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Tenth commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tenth commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="74" key="#Project_Structure" timestamp="1583179658260">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="74" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1583179658260" />
-    <state x="457" y="0" key="CommitChangelistDialog2" timestamp="1583152781554">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="366" y="0" key="CommitChangelistDialog2" timestamp="1583182051811">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="366" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583182051811" />
     <state x="457" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583152781554" />
+    <state x="147" y="65" key="MergeDialog" timestamp="1583182626332">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="147" y="65" key="MergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1583182626332" />
+    <state x="481" y="130" key="MultipleFileMergeDialog" timestamp="1583182626339">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="481" y="130" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1583182626339" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1583182745798">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1583182745798" />
+    <state x="477" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1583185425049">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="477" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583185425049" />
     <state x="580" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583179281748">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
