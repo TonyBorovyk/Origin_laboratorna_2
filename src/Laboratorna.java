@@ -13,5 +13,13 @@ public class Laboratorna {
         line_first = sc.nextLine();
         int k = Integer.parseInt(String.valueOf(line_first));
         String[][] BoardOfResults = new String[k][5];
+        while (sc.hasNext()) {
+            ArrayList<Integer> arrayList = new ArrayList<>();
+            splitted = sc.nextLine().split(",|:");
+            for (int i = 1; i < splitted.length; i++) {
+                int a = Integer.parseInt(splitted[i]);
+                arrayList.add(a);
+            }
+        }
     }
 }
