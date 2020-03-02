@@ -1,5 +1,4 @@
 
-
 import java.util.Scanner;
 import java.lang.String;
 import java.util.ArrayList;
@@ -12,7 +11,7 @@ public class Laboratorna {
         System.out.print("Введіть назву папки: ");
         String folder_1 = input.nextLine();
         int counter = 0;
-        int l = 5;
+        int l = CountOfTeam();
         String[][] BoardOfResults = new String[l][5];
 
         File folder = new File(folder_1);
@@ -59,9 +58,13 @@ public class Laboratorna {
 
                 }
                 counter++;
+            }if(counter >= p){
+                bubbleSort(BoardOfResults, l);
+                OutPut(BoardOfResults);
             }
-
         }
+        writeCsv(BoardOfResults, l);
+
     }
     public static int CountOfTeam() throws Exception {
         int teams = 0;
@@ -94,7 +97,7 @@ public class Laboratorna {
                     writer.write(BoardOfResults[i][j]);
                     if (j != 4)
                     {
-                        writer.write(',');
+                        writer.write(';');
                     }
                 }
                 if(i != l - 1)
@@ -103,9 +106,7 @@ public class Laboratorna {
                 }
             }
             writer.close();
-        } catch(Exception e) {
-
-        }
+        } catch(Exception e) {}
     }
     public static void bubbleSort(String[][] BoardOfResults, int k) {
         int Min = 0;
@@ -146,4 +147,3 @@ public class Laboratorna {
         }
     }
 }
-
