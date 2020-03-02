@@ -19,6 +19,7 @@ public class Laboratorna {
             for (int i = 1; i < splitted.length; i++) {
                 int a = Integer.parseInt(splitted[i]);
                 arrayList.add(a);
+                //egttrtgregrgrt
             }
         }
     }
